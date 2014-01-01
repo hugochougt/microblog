@@ -25,7 +25,7 @@ describe "UserPages" do
         expect { click_button submit }.not_to change(User, :count)
       end
 
-      it "after submission" do
+      describe "after submission" do
         before { click_button submit }
 
         it { should have_title("Sign up") }
